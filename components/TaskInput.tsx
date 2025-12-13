@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
 
-export default function TaskInput() {
+export default function TaskInput({ onAddTask }: { onAddTask: (title: string) => void }) {
     const [task, setTask] = useState("");
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (!task.trim()) return;
-        console.log("Adding task:", task);
+        onAddTask(task);
         setTask("");
     };
 

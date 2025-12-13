@@ -1,0 +1,20 @@
+
+> flowtask-ai@0.1.0 build
+> next build
+
+  Ôû▓ Next.js 14.2.16
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+Failed to compile.
+
+app\layout.tsx
+`next/font` error:
+Unknown font `Geist`
+
+app\layout.tsx
+`next/font` error:
+Unknown font `Geist Mono`
+
+
+> Build failed because of webpack errors

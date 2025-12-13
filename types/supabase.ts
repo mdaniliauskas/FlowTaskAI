@@ -36,6 +36,10 @@ export interface Database {
                     title: string
                     is_completed: boolean
                     is_important: boolean
+                    is_my_day: boolean
+                    notes: string | null
+                    due_date: string | null
+                    position: number
                     created_at: string
                     ai_enrichment: Json | null
                 }
@@ -45,6 +49,10 @@ export interface Database {
                     title: string
                     is_completed?: boolean
                     is_important?: boolean
+                    is_my_day?: boolean
+                    notes?: string | null
+                    due_date?: string | null
+                    position?: number
                     created_at?: string
                     ai_enrichment?: Json | null
                 }
@@ -54,6 +62,10 @@ export interface Database {
                     title?: string
                     is_completed?: boolean
                     is_important?: boolean
+                    is_my_day?: boolean
+                    notes?: string | null
+                    due_date?: string | null
+                    position?: number
                     created_at?: string
                     ai_enrichment?: Json | null
                 }

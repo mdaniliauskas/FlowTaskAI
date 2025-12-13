@@ -16,6 +16,10 @@ create table public.tasks (
   title text not null,
   is_completed boolean default false,
   is_important boolean default false,
+  is_my_day boolean default false, -- Features: My Day
+  notes text, -- Features: Task Details
+  due_date timestamp with time zone, -- Features: Due Date
+  position float default 0, -- Features: Reordering
   created_at timestamp with time zone default timezone('utc'::text, now()) not null,
   ai_enrichment jsonb -- Stores AI suggestions
 );
